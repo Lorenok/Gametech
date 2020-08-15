@@ -1,0 +1,344 @@
+[
+  {
+    "id": 1,
+    "name": "Playstation 4",
+    "description": "Nuevooooo",
+    "price": "40.000",
+    "image": "1-Play4.jpg",
+    "thematic": "Books",
+    "keywords": ["consolas", "playstation"]
+  },
+  {
+    "id": 2,
+    "name": "Nintendo Switch",
+    "description": "Nintendo Switch neon",
+    "price": "30.000",
+    "image": "2-NintendoSwitch.jpeg",
+    "thematic": "Videojuegos",
+    "keywords": ["consolas", "Nintendo"]
+  },
+  {
+    "id": 3,
+    "name": "Alfombra De Baile Dynacom 100 Canciones 12 Juegos 32 Bits",
+    "description": "Entretenimiento asegurado Excelente y entretenido producto para chicos y grandes. Alfombra de baile que conectandola a la TV, se debe ir acertando con los pies en las posiciones de la alfombra, las flechas aparecen y bajan en la pantalla con 100 melodías niveles de dificultas y diferentes selecciones.",
+    "price": "5.499",
+    "image": "alfombra-de-baile-dynacom-100-canciones-12-juegos-32-bits.jpg",
+    "thematic": "Consolas",
+    "keywords": ["accesorios", "Baile"]
+  },
+  {
+    "id": 4,
+    "name": "Consola Nintendo New 3ds Xl Galaxy",
+    "description": "El nuevo sistema Nintendo 3DS XL GALAXY combina juegos portátiles de última generación con tecnología 3D súper estable y funciones de control adicionales. Tome fotos en 3D, conéctese con amigos y mejore sus experiencias de juego con la ayuda adicional de amiibo.",
+    "price": "25.499",
+    "image": "consola-nintendo-new-3ds-xl-galaxy.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["consolas", "Nintendo"]
+  },
+  {
+    "id": 5,
+    "name": "Camara Playstation Ps4 V2",
+    "description": "Disfruta de magníficas funciones en PS4, como la posibilidad de transmitir imágenes de tus juegos en directo, usar reconocimiento facial y acceder a funciones",
+    "price": "9.999",
+    "image": "camara-playstation-ps4-v2.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["accesorios", "Playstation"]
+  },
+  {
+    "id": 6,
+    "name": "7-1 Kit Funda Nintendo Switch Orzly + Vidrio 9h Premiun + Silicona Completo Estuche Accesorios Joy Con",
+    "description": "Diseñado para hacer que su nueva consola Nintendo Switch sea aún más portátil y amigable para viajar",
+    "price": "3.650",
+    "image": "estuche-accesorios-con-funda-nintendo-switch.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["accesorios", "Nintendo"]
+  },
+  {
+    "id": 7,
+    "name": "Joystick Para Sega Genesis 6 Botones",
+    "description": "Joystick para sega 6 Botones Excelente calidad Cable de 1metro",
+    "price": "300",
+    "image": "joystick-para-sega-genesis-6-botones.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["joystick", "sega"]
+  },
+  {
+    "id": 8,
+    "name": "Casco Realidad Virtual Sony Ps4 Vr +camara+moves+3 Juegos Nuevo Modelo V2",
+    "description": "PlayStation VR es un dispositivo de realidad virtual compatible tanto con PlayStation 4 como con los nuevos modelos PS4 Slim y PS4 Pro. Una nueva forma de jugar con la que los jugadores se sentirán una mayor sensación de inmersión que nunca.",
+    "price": "99.999",
+    "image": "casco-realidad-virtual-sony-ps4-vr-camara-moves-3-juegos-nuevo-modelo-v2.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["accesorios", "sony"]
+  },
+  {
+    "id": 9,
+    "name": "Dualshock 4 Fortnite Neo Versa Bundle Ps4 - Nuevo",
+    "description": "Más robusto que la versión anterior, con una fina luz en la parte superior del pad, que le dá un toque más elegante.",
+    "price": "8.999",
+    "image": "dualshock-4-fortnite-neo-versa-bundle-ps4-nuevo.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["joystick", "fortnite"]
+  },
+  {
+    "id": 10,
+    "name": "Volante Y Pedales Playstation 4 Ps4 Thrustmaster T80 Gtb",
+    "description": "El primer volante del mundo con licencias oficiales de Ferrari y Playstation 4",
+    "price": "33.100",
+    "image": "volante-y-pedales-playstation-4-ps4-thrustmaster-t80-gtb.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["accesorios", "ps4"]
+  },
+  {
+    "id": 11,
+    "name": "Joystick Nintendo Pokeball Plus",
+    "description": "Este mando combina funciones revolucionarias mientras conserva precisión, comodidad y exactitud en cada movimiento.",
+    "price": "12.999",
+    "image": "joystick-pokemon.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["joystick", "Nintendo"]
+  },
+  {
+    "id": 12,
+    "name": "Joystick Hori Fighting Stick Mini 4 black",
+    "description": "Gracias a su ergonomía especialmente pensada para la posición de tu mano, podrás pasar horas jugando con total confort.",
+    "price": "8.999",
+    "image": "Joystick-Hori.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["joystick", "hori"]
+  },
+  {
+    "id": 13,
+    "name": "Joystick Sony PlayStation Move negro",
+    "description": "Ideal para ps4 con el vr.",
+    "price": "9.100",
+    "image": "Joystick-Sony-PlayStation-Move-negro.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["joystick", "playstation"]
+  },
+  {
+    "id": 14,
+    "name": "Joystick Nintendo Joy-Con púrpura neón/naranja neón",
+    "description": "Este mando combina funciones revolucionarias mientras conserva precisión, comodidad y exactitud en cada movimiento.",
+    "price": "14.990",
+    "image": "Joystick-Nintendo-Joy-Con-purpura-neon/naranja-neon.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["joystick", "Nintendo"]
+  },
+  {
+    "id": 15,
+    "name": "Joystick Nintendo Wii Remote Plus negro",
+    "description": "Se destaca por su capacidad de detección de movimientos en un determinado espacio, que permite una mayor interacción con la pantalla",
+    "price": "8.000",
+    "image": "Joystick-Nintendo-Wii-Remote-Plus-negro.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["joystick", "wii"]
+  },
+  {
+    "id": 16,
+    "name": "Joystick Nintendo Joy-Con rojo neón/azul neón",
+    "description": "Gracias a su ergonomía especialmente pensada para la posición de tu mano, podrás pasar horas jugando con total confort",
+    "price": "13.599",
+    "image": "Joystick-Nintendo-Joy-Con-rojo-neon/azul-neon.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["joystick", "Nintendo"]
+  },
+  {
+    "id": 17,
+    "name": "Auriculares Trust Carus jungle camo",
+    "description": "Al ser headset, vas a poder escuchar tus discos preferidos, mantener llamadas telefónicas y jugar en línea desde tu pc sin perderte ningún detalle.",
+    "price": "4.399",
+    "image": "Auriculares-Trust-Carus-jungle-camo.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["accesorios", "auriculares"]
+  },
+  {
+    "id": 18,
+    "name": "Auriculares gamer Gadnic A-37 Pro black y light blue",
+    "description": "Con los Gadnic A-37 Pro vas a poder escuchar el audio tal y como fue diseñado por los creadores.",
+    "price": "7.476",
+    "image": "Auriculares-gamer-Gadnic-A-37-Pro-black-y-light-blue.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["accesorios", "auriculares"]
+  },
+  {
+    "id": 19,
+    "name": "Auriculares gamer Nisuta NSAUG300 negro y verde",
+    "description": "¡Experimentá la adrenalina de sumergirte en la escena de otra manera! Tener auriculares específicos para jugar cambia completamente tu experiencia en cada partida",
+    "price": "4.041",
+    "image": "Auriculares-gamer-Nisuta-NSAUG300-negro-y-verde.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["accesorios", "auriculares"]
+  },
+  {
+    "id": 20,
+    "name": "Auriculares gamer Kotion Each G4000 negro y rojo",
+    "description": "Con los Kotion G4000 vas a poder escuchar el audio tal y como fue diseñado por los creadores.",
+    "price": "3.899",
+    "image": "Auriculares-gamer-Kotion-Each-G4000-negro-y-rojo.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["accesorios", "auriculares"]
+  },
+  {
+    "id": 21,
+    "name": "Joystick Signux GP003",
+    "description": "Este mando combina funciones revolucionarias mientras conserva precisión, comodidad y exactitud en cada movimiento.",
+    "price": "2.795",
+    "image": "Joystick-Signux-GP003.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["joystick", "signux"]
+  },
+  {
+    "id": 22,
+    "name": "Joystick Sony Dualshock 4 jet black",
+    "description": "Gracias a su ergonomía especialmente pensada para la posición de tu mano, podrás pasar horas jugando con total confort. Además, se destaca por su capacidad de detección de movimientos en un determinado espacio, que permite una mayor interacción con la pantalla.",
+    "price": "9.499",
+    "image": "Joystick-Sony-Dualshock-4-jet-black.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["joystick", "playstation"]
+  },
+  {
+    "id": 23,
+    "name": "Joystick Sony Dualshock 3 black",
+    "description": "Este mando combina funciones revolucionarias mientras conserva precisión, comodidad y exactitud en cada movimiento.",
+    "price": "1.780",
+    "image": "Joystick-Sony-Dualshock-3-black.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["joystick", "sony"]
+  },
+  {
+    "id": 24,
+    "name": "Maquina Arcade Multijuegos Mas De 12.000 Juegos",
+    "description": "Todos los juegos retro de tu infancia en una sola consola.",
+    "price": "23.381",
+    "image": "Maquina-Arcade-Multijuegos-Mas-De-12.000-Juegos.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["consolas", "arcade"]
+  },
+  {
+    "id": 25,
+    "name": "Mini Consola Portatil Juegos Retro Game Box",
+    "description": "Sistema portátil de videojuegos arcade: juegos como arcade juegos retro, lógica y matemáticas, deportes, rompecabezas, tiro, acción, carreras, juegos de lucha, estrategia, aventura, juegos de cartas y más",
+    "price": "2.700",
+    "image": "mini-consola-portatil-juegos-retro-game-box.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["consolas", "retro"]
+  },
+  {
+    "id": 26,
+    "name": "Mini Consola Retro Nes Anniversary Edition 620 Juegos",
+    "description": "Consola de juegos retro mini nes anniversary edition",
+    "price": "2.499",
+    "image": "Mini-Consola-Retro-Nes-Anniversary-Edition-620-Juegos.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["consolas", "retro"]
+  },
+  {
+    "id": 27,
+    "name": "Consola Retro Arcade 16 Bit Joystick Clasica Stick 145 Juego",
+    "description": "¡Volvé a ser niño con esta mini consola de videojuegos retro!",
+    "price": "2.999",
+    "image": "consola-retro-arcade-16-bit-joystick-clasica-stick-145-juegos.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["consolas", "retro"]
+  },
+  {
+    "id": 28,
+    "name": "Maquina Arcade Multijuegos Mas De 12.000 Juegos 33 Consolas",
+    "description": "12.000 juegos y 40 consolas retro",
+    "price": "18.925",
+    "image": "Maquina-Arcade-Multijuegos-Mas-De-12.000-Juegos.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["consolas", "arcade"]
+  },
+  {
+    "id": 29,
+    "name": "Micro Fichines Arcade Retro Flipper Consola 200 Juegos Niños",
+    "description": "¡Volvé a ser niño con esta mini consola de videojuegos retro!",
+    "price": "1.299",
+    "image": "micro-fichines-arcade-retro-flipper-consola-200-juegos-ninos.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["consolas", "fichines"]
+  },
+  {
+    "id": 30,
+    "name": "Sony PlayStation 2 Slim Standard charcoal black",
+    "description": "Con tu PlayStation 2 tendrás entretenimiento asegurado todos los días. Su tecnología fue creada para poner nuevos retos tanto a jugadores principiantes como expertos",
+    "price": "15.000",
+    "image": "Sony-PlayStation-2-Slim-Standard-charcoal-black.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["consolas", "sony"]
+  },
+  {
+    "id": 31,
+    "name": "Sony PlayStation gris",
+    "description": "Con tu PlayStation tendrás entretenimiento asegurado todos los días",
+    "price": "13.500",
+    "image": "Sony-PlayStation-gris.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["consolas", "sony"]
+  },
+  {
+    "id": 32,
+    "name": "Nintendo Switch Lite 32GB turquesa",
+    "description": "Nintendo Switch es una consola desmontable, que puede usarse en modo portátil, sobremesa o en TV; esto te brindará la posibilidad de utilizarla donde quieras y compartir sus controles",
+    "price": "42.999",
+    "image": "Nintendo-Switch-Lite-32GB-turquesa.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["consolas", "Nintendo"]
+  },
+  {
+    "id": 33,
+    "name": "Consola Iluminata Games Vídeo Game Retro 64GB negra",
+    "description": "Su conexión wifi te permitirá reproducir música, películas y tus series favoritas a través de las aplicaciones descargables.",
+    "price": "14.499",
+    "image": "Consola-Iluminata-Games-Vídeo-Game-Retro-64GB-negra.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["consolas", "iluminata"]
+  },
+  {
+    "id": 34,
+    "name": "Consola Sega Genesis 3 negra",
+    "description": "Con tu Genesis 3 tendrás entretenimiento asegurado todos los días.",
+    "price": "4.299",
+    "image": "Consola-Sega-Genesis-3-negra.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["consolas", "sega"]
+  },
+  {
+    "id": 35,
+    "name": "Nintendo 2DS New Super Mario Bros 2 blanco/rojo",
+    "description": "Al contar con un procesador de 2 núcleos y un procesador gráfico, brinda una experiencia dinámica, respuestas ágiles, así como transiciones fluidas de imágenes en alta definición.",
+    "price": "20.499",
+    "image": "Nintendo-2DS-New-Super-Mario-Bros 2-blanco/rojo.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["consolas", "Nintendo"]
+  },
+  {
+    "id": 36,
+    "name": "Microsoft Xbox One S 1TB Two-Controller Bundle blanco",
+    "description": "Se considera que esta consola es la mejor dentro del mercado, dado que presenta una resolución de hasta 4K. Su conexión wifi te permitirá reproducir música, películas y tus series favoritas a través de las aplicaciones descargables.",
+    "price": "48.034",
+    "image": "Microsoft-Xbox-One-S-1TB-Two-Controller-Bundle-blanco.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["consolas", "microsoft"]
+  },
+  {
+    "id": 37,
+    "name": "Consola Noganet Pocky 8 256MB negra",
+    "description": "Con tu Pocky 8 tendrás entretenimiento asegurado todos los días. ",
+    "price": "2.399",
+    "image": "Consola-Noganet-Pocky-8-256MB-negra.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["consolas", "Noganet"]
+  },
+  {
+    "id": 38,
+    "name": "Consola Apevtech 8 Bit blanca/roja",
+    "description": "Con tu 8 Bit tendrás entretenimiento asegurado todos los días. Su tecnología fue creada para poner nuevos retos tanto a jugadores principiantes como expertos.",
+    "price": "4.200",
+    "image": "Consola-Apevtech-8-Bit-blancaroja.jpg",
+    "thematic": "Videojuegos",
+    "keywords": ["consolas", "apevtech"]
+  }
+]
