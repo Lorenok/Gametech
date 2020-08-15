@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<%- include('./partials/head')%>
+<%- include('./partials/productSt')%>
+</head>
+<body>
+    <%- include('./partials/header')%>
+  <div id="page-wrapper">
+    <div id="page-container">
+        <div id="main-container">
+            <div id="page-content">
+                <div class="row text-center">
+                    <div class="col-sm-6 col-lg-6">
+                        <a href="javascript:void(0)" class="widget widget-hover-effect2">
+                            <div class="widget-extra themed-background-dark">
+                                <h4 class="widget-content-light"><strong>Total</strong> Productos</h4>
+                            </div>
+                            <div class="widget-extra-full"><span class="h2 themed-color-dark animation-expandOpen"><%= productos.length %></span></div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-6">
+                      <a href="javascript:void(0)" class="widget widget-hover-effect2">
+                          <div class="widget-extra themed-background-dark">
+                              <h4 class="widget-content-light"><strong>Categoria</strong></h4>
+                          </div>
+                          <div class="widget-extra-full"><span class="h2 themed-color-dark animation-expandOpen"><%= categoria.name %></span></div>
+                      </a>
+                  </div>
+                </div>
+                <div class="block full">
+                    <div class="block-title">
+                        <h2><strong>All</strong> Products</h2>
+                    </div>
+                    <table id="ecom-products" class="table table-bordered table-striped table-vcenter">
+                        <thead>
+                            <tr>
+                                <th class="text-center">ID</th>
+                                <th class="text-center">Image</th>
+                                <th class="text-center">Nombre</th>
+                                <th class="text-center">Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% for(let i = 0; i<productos.length; i++){ %>
+                                <tr>
+                                    <td class="text-center"><a href="/products/<%= productos[i].id %>"><strong><%= productos[i].id %> </strong></a></td>
+                                    <td class="text-left">
+                                        <div class="btn-group btn-group-xs"><a href="/products/<%= productos[i].id %>">
+                                            <img src="/Images/productos/<%= productos[i].image %>" class="avatar" alt="">
+                                        </a>
+                                        </div>
+                                    </td>
+                                    <td><a href="/products/<%= productos[i].id %>"><%= productos[i].short_description %></a></td>
+                                    <td class="text-left"><strong><%= productos[i].price %></strong></td>
+                                </tr>
+                            <% } %>
+                       </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('./partials/footer')%>  
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+    <script src="/js/plugins.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/validFrontAdd.js"></script>
+</body>
+</html>

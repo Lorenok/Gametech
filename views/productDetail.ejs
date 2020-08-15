@@ -1,0 +1,40 @@
+<%- include('./partials/head.ejs')%>
+<link rel="stylesheet" href="/stylesheets/productDetail.css">
+<body>
+    <%- include('./partials/header')%>
+      <div class="container">
+        <form>
+          <h4 class='destacar'><%=producto.dataValues.short_description %></h4>
+        <div class="row">
+            <div class='col-sm-12 col-md-6 col-lg-6 contenedores'>
+               <img class='col-12 productos' src='../Images/productos/<%= producto.dataValues.image %>'>
+            </div>
+            <div class='col-sm-12 col-md-6 col-lg-6 descripcion-producto'>
+              <div><h2 class="detalle"><%=producto.dataValues.short_description %></h2></div>
+              <div class="precios"><h6>Marca: <%=producto.dataValues.brand.name %></h6>
+             <div class="precios"><h6>Categoría: <%=producto.dataValues.category.name %></h6> 
+              <div class="precios"><h3>Precio: $<%=producto.dataValues.price %></h3> 
+              <div class="card card-body">
+              <% {%> <%=producto.dataValues.long_description %> <%} %>
+              </div>
+              <button type="button dark" class="btn btn-info">
+              
+                <a href="/cart/:id" value=<%=producto.dataValues.id %>>Agregar al Carrito</a></button> 
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+    <%- include('./partials/footer')%> 
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+</html>

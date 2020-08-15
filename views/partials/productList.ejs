@@ -1,0 +1,82 @@
+   <div id="page-wrapper">
+            <div id="page-container">
+                <div id="main-container">
+                    <div id="page-content">
+                        <div class="content-header">
+                            <ul class="nav-horizontal text-center">
+                                <li>
+                                    <a href="/"><i class="fa fa-bar-chart"></i> Home</a>
+                                </li>
+                                <li class="active">
+                                    <a href="/admin"><i class="fa fa-shopping-bag"></i> Productos</a>
+                                </li>
+                                <li >
+                                    <a href="/products/create"><i class="fa fa-plus"></i> Crear Producto</a>
+                                </li>
+                                <li>
+                                    <a href="/admin/clients"><i class="fa fa-users"></i> Usuarios</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-sm-6 col-lg-6">
+                                <a href="/products/create" class="widget widget-hover-effect2">
+                                    <div class="widget-extra themed-background-success">
+                                        <h4 class="widget-content-light"><strong>Crear</strong> Producto</h4>
+                                    </div>
+                                    <div class="widget-extra-full"><span class="h2 text-success animation-expandOpen"><i class="fa fa-plus"></i></span></div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-lg-6">
+                                <a href="javascript:void(0)" class="widget widget-hover-effect2">
+                                    <div class="widget-extra themed-background-dark">
+                                        <h4 class="widget-content-light"><strong>Total</strong> Productos</h4>
+                                    </div>
+                                    <div class="widget-extra-full"><span class="h2 themed-color-dark animation-expandOpen"><%= resultados.length %></span></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="block full">
+                            <div class="block-title">
+                                <h2><strong>All</strong> Products</h2>
+                            </div>
+                            <table id="ecom-products" class="table table-bordered table-striped table-vcenter">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">ID</th>
+                                        <th class="text-center">Image</th>
+                                        <th class="text-center">Nombre</th>
+                                        <th class="text-center">Precio</th>
+                                        <th class="text-center">Categoria</th>
+                                        <th class="text-center">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% for(let i = 0; i<resultados.length; i++){ %>
+                                        <tr>
+                                            <td class="text-center"><a href="#"><strong><%= resultados[i].id %></strong></a></td>
+                                            <td class="text-left">
+                                                <div class="btn-group btn-group-xs">
+                                                    <img src="/Images/productos/<%= resultados[i].image %>" class="avatar" alt="">
+                                                </div>
+                                            </td>
+                                            <td><a href="#"><%= resultados[i].short_description %></a></td>
+                                            <td class="text-left"><strong><%= resultados[i].price %></strong></td>
+                                            <td class="text-left">
+                                                <span><%= resultados[i].category.name %></span>
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="btn-group btn-group-xs">
+                                                    <a href="/products/edit/<%= resultados[i].id %>" data-toggle="tooltip" title="Edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
+                                                    <a href="'/products/delete/<%= resultados[i].id %>" data-toggle="tooltip" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    <% } %>
+                               </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <%- include('./partials/head') %>
+  <link rel="stylesheet" href="../../stylesheets/register.css">
+</head>
+<body>
+  <div id="external-container-login">
+    <form action="../login" class="form-login login" method="POST">
+      <div id="internal-container-login">
+        <h2 id="header-login">Log in</h2>
+        <% if(statusRegistracion != ''){ %>
+          <p id="paragraph-login"><%= statusRegistracion %></p>
+          <% for(let i=0; i<errors.length; i++){ %>
+            <p id="paragraph-login"><%= errors[i].msg %></p>
+          <% } %>
+        <% }else{ %>
+          <p id="paragraph-login">Bienvenido!</p>
+        <% } %>
+          <p id="paragraph-login">Ingrese sus datos de usuario:</p>
+        <br>
+        <br>
+            <div class="frame-sizeinputs">
+                <input type="email" placeholder="E-mail" class="sizeinputs border-inputs email" name="email"><i class="i-blank"></i>
+                
+            </div>
+        <br>
+        <p class="mensajeErrorEmail"></p>
+        <br>
+            <div class="frame-sizeinputs">
+                <input type="password"  placeholder="Password" class="sizeinputs border-inputs password" name="password"><i class="far fa-eye-slash"></i>
+            </div>           
+        <br>
+        <p class="mensajeErrorPassword"></p>
+        <br>
+        <br>
+        <input type="submit" id="email" value="Sign in" class="sizeinputs btn-submit">
+        <br>
+        <label><input type="checkbox" id="cbox1" value="first_checkbox" name="recordame"> Recordar Usuario.</label><br>
+        <br>
+        <div id="frame-member-signup">
+            <a href="../register" class="a-member-signup">Not a member yet?</a>
+            <a href="../register" class="a-member-signup font-signup">Sign Up</a>
+        </div>
+    </div>
+    </form>
+</div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="../../js/validacionRegister.js"></script>
+</body>
+</html>

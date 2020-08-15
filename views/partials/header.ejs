@@ -1,0 +1,86 @@
+  <nav class="navbar navbar-light navbar-expand-md bg-white justify-content-between">
+    <div class="flex-fill flex-column"> 
+      <div class="container-fluid "> 
+        <a href="/" class="navbar-brand mx-auto d-block order-0 order-md-0 ">
+          <img class="logo" src="/images/loguito2.png">
+        </a>
+        <button class="navbar-toggler ocultar-md" type="button" data-toggle="collapse" data-target=".navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+          </span>
+        </button>
+        <div class="navbar-collapse collapse navbarText w-50 order-1 order-md-1 ">
+          <form action='/search'class="ml-3 my-auto d-inline w-50">
+            <div class="bg-withe rounded border rounded-pill">
+              <div class="input-group">
+                <form action='/search' method="GET">
+                  <div class="input-group-prepend">
+                    <button id="button-addon2" type="submit" value='search' class="btn btn-link text-dark"><i
+                        class="fa fa-search"></i></button>
+                  </div>
+                  <input class="ancho" type="text" placeholder="Buscar" aria-describedby="button-addon2" name='query'>
+                </form>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="collapse navbar-collapse order-2 navbarText">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="/cart"><i class="fa fa-shopping-cart"></i></a></li>
+            <% if(usuario != '') {%>
+              <li class="nav-item"><a class="nav-link" href=""><%= usuario %></a></li>
+            <% }else { %>
+              <li class="nav-item"><a class="nav-link" href="/login"><i class="fa fa-user"></i></a></li>
+            <% } %>
+          </ul>
+        </div>
+      </div>
+      <nav class="collapse navbar-collapse navbarText navbar navbar-light navbar-expand-md bg-white justify-content-between ">
+        <ul class="container-fluid navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categorias
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <% for(let i = 0; i<categorias.length; i++){ %>
+                <a class="dropdown-item" href="/products/categories/<%= categorias[i].id %>"><%= categorias[i].name %></a>
+                <% } %>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="/products/categories/3">
+              Accesorios
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="/products/categories/2">
+              Juegos
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="/products/categories/4">
+              Ofertas
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </nav>
+
+<!-- popup-->
+
+<!--endpopp-->
+
+  
+  
+  
+	<div class="social">
+		<ul>
+			<li><a href="https://facebook.com" class="icon-button facebook"><i class="fa fa-facebook"></i><span></span></a></li>
+			<li><a href="https://twitter.com" class="icon-button twitter"><i class="fa fa-twitter"></i><span></span></a></li>
+      <li><a href="https://plus.google.com" class="icon-button instagram"><i class="fa fa-instagram"></i><span></span></a></li>
+      <li><a href="https://plus.google.com" class="icon-button instagram"><i class="fa fa-steam"></i><span></span></a></li>
+			<li><a href="https://plus.google.com" class="icon-button instagram"><i class="fa fa-envelope"></i><span></span></a></li>
+
+		</ul>
+	</div>

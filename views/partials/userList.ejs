@@ -1,0 +1,64 @@
+   
+   <div id="page-wrapper">
+    <div id="page-container">
+        <div id="main-container">
+            <div id="page-content">
+                <div class="content-header">
+                    <ul class="nav-horizontal text-center">
+                        <li>
+                            <a href="/"><i class="fa fa-bar-chart"></i> Home</a>
+                        </li>
+                        <li>
+                            <a href="/admin"><i class="fa fa-shopping-bag"></i> Productos</a>
+                        </li>
+                        <li >
+                            <a href="/products/create"><i class="fa fa-plus"></i> Crear Producto</a>
+                        </li>
+                        <li class="active">
+                            <a href="/admin/clients"><i class="fa fa-users"></i> Usuarios</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row text-center">
+                    <div class="col">
+                        <a href="javascript:void(0)" class="widget widget-hover-effect2">
+                            <div class="widget-extra themed-background-dark">
+                                <h4 class="widget-content-light"><strong>Total</strong> Clientes activos</h4>
+                            </div>
+                            <div class="widget-extra-full"><span class="h2 themed-color-dark animation-expandOpen"><%= usuarios.length %></span></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="block full">
+                    <div class="block-title">
+                        <h2><strong>All</strong> Products</h2>
+                    </div>
+                    <table id="ecom-products" class="table table-bordered table-striped table-vcenter">
+                        <thead>
+                            <tr>
+                                <th class="text-center">ID</th>
+                                <th class="text-center">Image</th>
+                                <th class="text-center">Nombre</th>
+                                <th class="text-center">Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% for(let i = 0; i<usuarios.length; i++){ %>
+                                <tr>
+                                    <td class="text-center"><a href="page_ecom_product_edit.html"><strong><%= usuarios[i].id %></strong></a></td>
+                                    <td class="text-left">
+                                        <div class="btn-group btn-group-xs">
+                                            <img src="../Images/avatar-users/<%= usuarios[i].avatar %>" class="avatar" alt="">
+                                        </div>
+                                    </td>
+                                    <td><a href="page_ecom_product_edit.html"><%= usuarios[i].name %></a></td>
+                                    <td class="text-left"><strong><%= usuarios[i].email %></strong></td>
+                                </tr>
+                            <% } %>
+                       </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

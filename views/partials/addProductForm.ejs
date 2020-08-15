@@ -1,0 +1,96 @@
+<div id="page-wrapper">
+    <div id="main-container">
+        <div id="page-content">
+            <div class="content-header">
+                <ul class="nav-horizontal text-center">
+                    <li>
+                        <a href="/"><i class="fa fa-bar-chart"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="/admin"><i class="fa fa-shopping-bag"></i> Productos</a>
+                    </li>
+                    <li class="active">
+                        <a href="/products/create"><i class="fa fa-plus"></i> Crear Producto</a>
+                    </li>
+                    <li>
+                        <a href="/admin/clients"><i class="fa fa-users"></i> Usuarios</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="block">
+                        <div class="block-title">
+                            <h2><i class="fa fa-pencil"></i> <strong>General</strong> Data</h2>
+                        </div>
+                        <form action="/products/create" method="post" enctype="multipart/form-data" class="form-horizontal form-bordered" id='addProductForms'>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="product-name">Nombre</label>
+                                <div class="col-md-9">
+                                    <input type="text" id="product-name" class="form-control name" placeholder="Nombre del producto" name="name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="product-short-description">Descripcion</label>
+                                <div class="col-md-9">
+                                    <textarea id="product-short-description" name="description" class="form-control" rows="3"placeholder="Descripción del producto"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Categoria</label>
+                                <div class="col-md-8">
+                                    <select id="product-category" name="productCategory" class="select-chosen" data-placeholder="Choose Category.." style="width: 250px;">
+                                        <% for(let i = 0; i<categorias.length; i++){ %>
+                                            <option value="<%= categorias[i].id %>"><%= categorias[i].name %></option>
+                                            <% } %>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="product-price">Precio</label>
+                                <div class="col-md-8">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-usd"></i></div>
+                                        <input type="text" id="product-price" name="price" class="form-control" placeholder="0,00">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="col-md-3 control-label" for="product-price">Cantidad</label>
+                              <div class="col-md-8">
+                                  <div class="input-group">
+                                      <input type="text" id="product-price" name="product-price" class="form-control" placeholder="00">
+                                  </div>
+                              </div>
+                          </div>
+                            <div class="form-group form-actions">
+                                <div class="col-md-9 col-md-offset-3">
+                                  <button type="submit" name="submit" class="btn btn-sm btn-primary"id='sendInformation'value ='El producto fue creado con exito!'><i class="fa fa-floppy-o"></i> Save</button>
+                                  <button type="reset" class="btn btn-sm btn-warning"><i class="fa fa-repeat"></i> Reset</button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="block">
+                        <div class="block-title">
+                            <h2><i class="fa fa-picture-o"></i> <strong>Product</strong> Images</h2>
+                        </div>
+                        <div class="form-group">
+                            <h2></i> <strong>Subir</strong> Imagen</h2>
+                        <div class="col-4" >
+                            <input name="imagenNew" type="file" id="seleccionArchivos" accept="image/*">
+                            <br><br>
+                            <img id="imagenPrevisualizacion" class="img-thumbnail">
+                        </div>
+                        <script src="/js/scripto.js"></script>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  

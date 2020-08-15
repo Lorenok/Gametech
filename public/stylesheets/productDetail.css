@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* .form-control::placeholder {
+    font-size: 0.95rem;
+    color: #aaa;
+    font-style: italic;
+  }
+  .bg-white{
+      background-color: white;
+  } */
+
+.btn-group{
+    margin: 0 auto;
+    
+}
+.destacar{
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+.btn{
+    font-size: 10px;
+    font-family: quicksand;
+    color:black;
+}
+.dark{
+    width: 100%;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: quicksand;
+}
+
+/* img {
+    margin:0 auto;
+    width:100%;
+   
+} */
+h2 {
+    color: grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.contenedores{
+   font-weight: lighter;
+   color: grey;
+   font-size: 12px;
+   opacity: 80%;
+   text-align: center;
+   margin-bottom: 30px;
+}
+.row{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.descripcion-envios{
+    overflow: hidden;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-top: 15px;
+}
+i .envios{
+    font-size: 15px;
+}
+.envios{
+    padding: 0%;
+    float: left;
+    margin: 0px 2px;
+    font-size: 10px;
+    margin: 0 0;
+}
+.btn-info {
+    background-color: red;
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    border: solid 1px red;
+    margin-top: 20PX;
+}
+.detalle{
+    font-family:'Poppins', sans-serif;
+    font-size: 25px;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.detalle-productos{
+    text-align: center;
+    margin: 20px auto;
+}
+.btn-primary{
+    background-color: black;
+    color: white;
+    border: solid 1px black;
+    border-radius: 50%;
+}
+
+/* element.style {
+}
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+} */
+
+
+
+@media (max-width:768px) {
+
+    .mostrar-lg{
+        display: none;
+    }
+}
+
+
+@media (min-width:768px) {
+    body{
+        background-color:white;}
+
+    .ocultar-md {
+            display: none;
+            }
+    /* img {
+        width:90%;
+        margin:5 auto;
+    } */
+
+    }

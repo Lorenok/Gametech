@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <%- include('./partials/head') %>
+</head>
+<body>
+  <%- include('./partials/header')%>
+    <div class="carousel slide" id="myCarousel"  data-ride="carousel">
+        <div class="carousel-inner mostrar-lg">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-item active mostrar-lg">
+            <a href="#"><img src="images/PIA1.jpg" class="d-block w-100 mostrar-lg" alt="..."></a>
+          </div>
+          <div class="carousel-item mostrar-lg">
+            <a href="#"><img src="images/PIA2.jpg" class="d-block w-100 mostrar-lg" alt="..."></a>
+          </div>
+          <div class="carousel-item mostrar-lg">
+            <a href="#"><img src="images/PIA3.jpg" class="d-block w-100 mostrar-lg" alt="..."></a>
+          </div>
+        </div>
+        <a class="carousel-control-prev mostrar-lg" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next mostrar-lg" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="container">
+
+        <div class="row row-cols-1 row-cols-md-4 card-deck">
+
+        <!-- nuevo -->
+        <% if(productos[0].dataValues != ''){%>
+        <% for(let i = 0; i<3; i++){ %>
+        <div class="card">
+          <a
+            href="/products/<%= productos[i].dataValues.id %>"
+            class="card-img-top"
+          >
+            <img
+              src="../Images/productos/<%= productos[i].dataValues.image %>"
+              alt="Card image cap"
+            />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title"><%= productos[i].short_description %></h5>
+            <p class="card-text"><%= productos[i].long_description %></p>
+            <button type="button" class="btn btn-info">
+              <a href="/products/<%= productos[i].dataValues.id %>">
+                Mas info
+              </a>
+            </button>
+          </div>
+        </div>
+        <% } %>
+        <% }else{ %>
+
+          <h2>No se encontraron coincidencias de productos:"<%= datoABuscar %>" </h2>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+
+        <% } %>
+      </div>
+    </div>
+
+
+        <!-- nuevo -->
+
+
+<%- include('./partials/footer')%>      
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* .btn{
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    color:black;
+    font-weight: bold;
+} */
+
+.btn-primary{
+    background-color: black;
+    color: white;
+    border: solid 1px black;
+    border-radius: 16px;
+}
+
+ul {
+    list-style: none;
+}
+/* li .dropdown .show {
+    text-decoration: none;
+} */
+a {
+    color:grey;
+}
+.mayor-detalle{
+   overflow:hidden;
+    align-items: center;
+    margin: 10px auto;
+}
+.sub-grupos{
+    text-align: center;
+    font-size: 12px;
+}
+.lateral-izq {
+    border-bottom: solid 1px grey;
+} 
+
+.producto-agregar{
+    overflow: hidden;
+    font-size: 12px;
+    font-family:'Poppins', sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-right:0px;
+    padding-left: 10px;
+}
+.form-control{
+    padding: unset;
+    margin-right:10px;
+}
+.pagination {
+   box-shadow: none;
+}
+
+.pages {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+@media (max-width:768px) {
+    .mostrar-lg{
+        display: none;
+        justify-content: center;
+    }
+}
+
+
+@media (min-width:767px) {
+    body{
+        background-color:white;}
+
+    .ocultar-md {
+            display: none;
+            }
+    .mayor-detalle{
+        display: flex;
+    }
+    .img-add-product {
+        width: 80%;
+    }
+}
